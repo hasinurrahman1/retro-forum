@@ -6,10 +6,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
     <script src="https://kit.fontawesome.com/82b8e9f002.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>ReTro Forum</title>
 </head>
 <body>
     <header>
+        <!-- navbar part -->
         <div class="w-11/12 h-16 bg-gray-100 mx-auto flex justify-between items-center mt-2">
             <h1 class="text-blue-700 text-4xl font-bold ml-20">Re<span class="text-amber-400 text-4xl font-bold">Tro</span></h1>
             <div class="flex gap-5 mr-20">
@@ -17,9 +19,36 @@
                 <button class="py-3 px-4 rounded-full bg-gray-200 text-blue-700" type="button"><i class="fa-solid fa-pen"></i></button>
                 <button class="py-3 px-4 rounded-full bg-gray-200 text-blue-700" type="button"><i class="fa-solid fa-user-plus"></i></button>
                 <button class="py-3 px-4 rounded-full bg-gray-200 text-blue-700 mr-14" type="button"><i class="fa-solid fa-flag"></i></button>
-                <button class="bg-black text-white font-medium px-5 py-2 rounded-full" type="button">Sign In</button>
+                <button class="bg-black text-white font-medium px-5 rounded-full" type="button">Sign In</button>
             </div>
         </div>
+        <!-- banner part -->
+        <div class="w-11/12 bg-indigo-950 mx-auto relative">
+            <img class="mx-auto" src="images/bgbanner.png" alt="" srcset="">
+        </div>
+        <div class="w-2/5 absolute z-10 banner-text">
+            <h1 class="text-4xl font-bold text-cyan-400">Welcome to the <span class="text-amber-400">ReTro</span> Forum</h1>
+            <p class="text-xl text-white font-semibold mt-4">Share your favorite opinion and win and wp forum coffee mug</p>
+            <input class="w-4/5 rounded-full mt-6" type="text" name="text" id="" placeholder="Search here anything">
+            <button class="bg-black text-white font-medium px-5 py-2 rounded-full" type="button">Search</button>
+        </div>
+        <div class="w-1/4 h-48 bg-black rounded-3xl absolute z-20 banner-card">
+            <div class="flex justify-around pt-7 text-white">
+                <div>
+                    <p class="text-lg font-semibold">Registered Users</p>
+                    <p class="text-lg font-semibold mt-2">Forum</p>
+                    <p class="text-lg font-semibold mt-2">Topics</p>
+                    <p class="text-lg font-semibold mt-2">Replies</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold">01</p>
+                    <p class="text-lg font-semibold mt-2">03</p>
+                    <p class="text-lg font-semibold mt-2">05</p>
+                    <p class="text-lg font-semibold mt-2">07</p>
+                </div>
+            </div>
+        </div>
+        
     </header>
     <main>
 
