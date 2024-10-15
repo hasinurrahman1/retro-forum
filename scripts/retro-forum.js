@@ -41,7 +41,7 @@ const displayData = (data) => {
                     <p>${post.posted_time}</p>
                 </div>
             </div>
-            <button id="markRead-btn" class="w-8 h-8 bg-blue-600 rounded-full" type="button"><i
+            <button onclick="markRead()" id="markRead-btn" class="w-8 h-8 bg-blue-600 rounded-full" type="button"><i
                     class="fa-regular fa-envelope-open text-xl text-white"></i></button>
         </div>
     </div>
@@ -52,6 +52,5 @@ const displayData = (data) => {
 }
 
 loadDataAllPosts();
-
 
 
