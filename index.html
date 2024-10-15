@@ -106,7 +106,7 @@
             <div id="aside-container" class="w-1/3">
                 <div class="h-16 flex items-center justify-between px-4 text-white bg-black rounded-t-xl">
                     <h1 class="text-xl font-bold">Title</h1>
-                    <p class="font-semibold">Mark as read (<span class="font-normal">04</span>)</p>
+                    <p class="font-semibold">Mark as read (<span id="mark-increase" class="font-normal">0</span>)</p>
                 </div>
                 <!-- <div class="h-20 mt-2 bg-gray-100 rounded-xl flex items-center gap-x-5 mx-auto px-3 shadow-xl">
                     <h1 class="text-base font-semibold mt-3">10 Kids Unaware of Their Halloween Costume</h1>
@@ -118,11 +118,26 @@
             </div>
         </div>
 
-        <!-- sub-card section -->
+        <!-- latest posts banner -->
+        <div class="w-11/12 h-96 bg-indigo-950 mx-auto rounded-3xl mt-16">
+            <div class="latest-img relative">
+                <img src="images/joinforum.png" alt="" srcset="">
+            </div>
+            <div class="w-3/6 absolute latest-text">
+                <h1 class="text-6xl font-bold text-cyan-400">Join Our Forum</h1>
+                <p class="text-xl text-white font-semibold mt-5">Share your favorite opinion and win and wp forum coffee
+                    mug! Yes, you can run unit tests and view the results directly within the app. </p>
+                <button class="text-xl font-medium bg-cyan-400 text-white px-7 py-4 rounded-full mt-10"
+                    type="button">Registered Now</button>
+            </div>
+        </div>
+
+        <!-- latest posts section -->
         <div class="w-11/12 mx-auto mt-5">
-            <div class="w-2/5 mt-16 mx-auto">
-                <h1 class="text-3xl font-bold text-blue-700 text-center">Latest Posts</h1>
-                <p class="text-lg font-semibold text-center mt-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <div class="w-2/5 mx-auto mt-16">
+                <h1 class="text-3xl font-bold text-center text-blue-700">Latest Posts</h1>
+                <p class="text-lg font-semibold text-center mt-5">Yes, you can run unit tests and view the results
+                    directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
 
             <div id="latest-container" class="grid grid-cols-3 gap-x-10 mt-8">
@@ -149,16 +164,16 @@
                     </div>
                 </div> -->
             </div>
-
         </div>
-
     </main>
+
     <footer>
         <div class="bg-gray-200 mt-32">
-            <div class="w-2/5 pt-16 mx-auto">
+            <div class="w-2/5 mx-auto pt-16">
                 <h1 class="text-blue-700 text-4xl font-bold text-center">Re<span
-                    class="text-amber-400 text-4xl font-bold">Tro</span></h1>
-                <p class="text-base font-semibold text-center mt-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+                        class="text-amber-400 text-4xl font-bold">Tro</span></h1>
+                <p class="text-base font-semibold text-center mt-5">Contrary to popular belief, Lorem Ipsum is not
+                    simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
                 <div class="w-60 mx-auto flex items-center justify-around mt-5">
                     <button type="button"><i class="fa-brands fa-twitter text-3xl"></i></button>
                     <button type="button"><i class="fa-brands fa-facebook text-3xl"></i></button>
@@ -166,8 +181,8 @@
                     <button type="button"><i class="fa-brands fa-github text-3xl"></i></button>
                 </div>
             </div>
-            <hr class="w-11/12 border-neutral-300 mx-auto mt-10"/>
-            <p class="mt-10 text-center pb-10">2017, All Rights Reserved.</p>
+            <hr class="w-11/12 border-neutral-300 mx-auto mt-10" />
+            <p class="mt-10 text-center pb-10">2024, All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -175,7 +190,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <!-- connect js file -->
     <script src="scripts/retro-forum.js"></script>
-    <script src="scripts/aside.js"></script>
 </body>
 
 </html>

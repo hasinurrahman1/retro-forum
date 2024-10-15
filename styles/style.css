@@ -1,14 +1,26 @@
-.banner-card{
+.banner-card {
     left: 850px;
     bottom: 290px;
 }
-.banner-text{
+
+.banner-text {
     left: 170px;
     top: 160px;
 }
 
 /* card part */
-.active-point{
+.active-point {
     left: 159px;
     top: 660px;
+}
+
+/* latest part */
+.latest-img {
+    margin-left: 750px;
+    padding-top: 25px;
+}
+
+.latest-text {
+    left: 150px;
+    top: 2310px;
 }
