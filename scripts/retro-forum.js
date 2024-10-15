@@ -54,3 +54,41 @@ const displayData = (data) => {
 loadDataAllPosts();
 
 
+const loadLatestPosts = () => {
+    const url = 'https://openapi.programming-hero.com/api/retro-forum/latest-posts';
+    fetch(url)
+        .then(response => response.json())
+        .then(data => displayLatestPosts(data))
+}
+
+const displayLatestPosts = (data) => {
+    const latestContainer = document.getElementById('latest-container');
+    for (const post of data) {
+        // console.log(post.title)
+        const latestDiv = document.createElement('div');
+        latestDiv.innerHTML = `
+        <div class="w-96 rounded-3xl bg-black shadow-xl shadow-fuchsia-600">
+                    <div class="pt-7"><img class="w-80 h-52 mx-auto rounded-3xl" src="${post.cover_image}"
+                    alt=""></div>
+                    <div class="w-80 mx-auto mt-5">
+                        <div class="flex items-center gap-x-4 text-white">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <p>${post.author.posted_date?post.author.posted_date:'No publish date'}</p>
+                        </div>
+                        <h1 class="text-cyan-400 text-xl font-semibold mt-3">${post.title}</h1>
+                        <p class="text-white mt-3">${post.description}</p>
+                        <div class="flex items-center gap-x-5 mt-5 pb-5">
+                            <img class="w-14 h-14 bg-amber-400 rounded-full" src="${post.profile_image}" alt=""
+                                srcset="">
+                            <div class="text-white">
+                                <h1>${post.author.name}</h1>
+                                <h3>${post.author.designation?post.author.designation:'No Designation'}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        `;
+        latestContainer.appendChild(latestDiv);
+    }
+}
+loadLatestPosts()
